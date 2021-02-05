@@ -76,14 +76,14 @@ tileMeters = 256 * 7.0 = 1792
 easting = -238375.0 + (321 * 1792) = 336857
 northing = 1376256.0 - (486 * 1792) = 505344
 ```
-NOTE: Returned coordinate will always equate to top-left edge of tile.
+NOTE: Returned coordinate will always equate to top-left edge of the tile.
 
 ## EPSG:3857 Tile Matrix Set
 
-Please see the following [page](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Derivation_of_tile_names) on the OpenStreetMap Wiki for an implementation (with pseudo-code) for the Web Mercator projection .
+Please see the following [page](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Derivation_of_tile_names) on the OpenStreetMap Wiki for an implementation (with pseudo-code) for the Web Mercator projection.
 
 ## Licence
 
-The contents of this repository are licensed under the [Open Government Licence 3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/)
+The contents of this repository are licensed under the [Open Government Licence 3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/).
 
 ![Logo](http://www.nationalarchives.gov.uk/images/infoman/ogl-symbol-41px-retina-black.png "OGL logo")
