@@ -14,7 +14,7 @@ originY = 1376256.0
 
 2. Tile size (in metres) for the requested zoom level.
 ```
-tileMeters = 256 * resolution
+tileMeters = 256 * (896 / (2 ** {zoom}))
 ```
 NOTE: Tiles are 256 × 256 pixel PNG files.
 
@@ -50,7 +50,7 @@ northing = 503695
 
 zoom = 7
 
-tileMeters = 256 * 7.0 = 1792
+tileMeters = 256 * (896 / (2 ** 7)) = 1792
 
 x = floor((337297 - -238375.0) / 1792) = 321
 y = floor((1376256.0 - 503695) / 1792) = 486
@@ -71,7 +71,7 @@ y = 486
 
 zoom = 7
 
-tileMeters = 256 * 7.0 = 1792
+tileMeters = 256 * (896 / (2 ** 7)) = 1792
 
 easting = -238375.0 + (321 * 1792) = 336857
 northing = 1376256.0 - (486 * 1792) = 505344
