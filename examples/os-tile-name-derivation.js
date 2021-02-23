@@ -1,10 +1,10 @@
-// os-tile-name-derivation.js v0.1.0
+// os-tile-name-derivation.js v0.2.0
 
 window.os = window.os || {};
 
 os.TileNameDerivation = {
     // Resolutions (metres per pixel) at each tile matrix zoom level.
-    _resolutions: [ 896.0, 448.0, 224.0, 112.0, 56.0, 28.0, 14.0, 7.0, 3.5, 1.75, 0.875, 0.4375, 0.21875, 0.109375 ],
+    // _resolutions: [ 896.0, 448.0, 224.0, 112.0, 56.0, 28.0, 14.0, 7.0, 3.5, 1.75, 0.875, 0.4375, 0.21875, 0.109375 ],
 
     // False origin for EPSG:27700 tileset.
     _origin: [ -238375.0, 1376256.0 ],
@@ -14,7 +14,9 @@ os.TileNameDerivation = {
      * @param {integer} zoom - The tile matrix zoom level.
      */
     _getTileMeters: function(zoom) {
-        return 256 * this._resolutions[ zoom ];
+        // return 256 * this._resolutions[ zoom ];
+        // return 256 * (896 / Math.pow(2, zoom));
+        return 256 * (896 / (2 ** zoom));
     },
 
     /**
